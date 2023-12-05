@@ -1,0 +1,37 @@
+.contact__container {
+  background-color: var(--color-bg);
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+  padding: 2rem;
+}
+
+.heading + p {
+  color: var(--color-grey-1);
+  margin-top: 1rem;
+}
+
+.contact__socials {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.contact__socials img {
+  width: 64px;
+  height: 64px;
+  cursor: pointer;
+  scale: 1;
+  transition: all ease 0.5s;
+}
+
+.contact__socials img:hover{
+  scale: 1.2;
+}
+
+@media screen and (min-width: 768px){
+  .contact__container{
+    margin-top: 2rem;
+  }
+}

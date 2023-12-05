@@ -1,0 +1,126 @@
+#projects{
+  width: 100%;
+}
+
+.project__container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: 1rem;
+}
+
+.project_header {
+  width: 100%;
+  padding: 1.2rem;
+  background-color: var(--color-bg);
+  border-radius: 1.2rem;
+}
+
+.heading {
+  background-color: #a4a4a4;
+  width: fit-content;
+  padding: 0.25rem 0.75rem;
+  color: #000;
+  border-radius: 0.25rem;
+  font-family: var(--font-family-secondary);
+}
+
+.sub-heading {
+  font-size: 1.2rem;
+  color: var(--color-grey-1);
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.projects__grid {
+  margin-top: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.project_card {
+  background-color: var(--color-bg);
+  padding: 1rem;
+  border-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.project_card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+.heading {
+  margin-top: auto;
+}
+
+.project_name {
+  margin-top: 0.8rem;
+  font-size: 1.3rem;
+  font-family: var(--font-family-secondary);
+  color: var(--color-grey-1);
+}
+
+.project_card_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.description {
+  margin: 1rem 0;
+  color: var(--color-grey-1);
+}
+
+.redirect {
+  background-color: var(--color-bg-1);
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.morework_container {
+  width: 100%;
+  margin-top: 1rem;
+  background-color: var(--color-bg);
+  border-radius: 1rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.3rem;
+  cursor: pointer;
+}
+
+.morework_text {
+  color: var(--color-grey-1);
+  font-weight: 600;
+}
+
+.morework_icon {
+  color: var(--color-grey-1);
+}
+
+
+@media screen and (min-width: 768px){
+  #projects {
+    margin-top: 2rem;
+  }
+
+  .projects__grid{
+    margin-top: 2rem;
+    gap: 2rem;
+  }
+
+  .morework_container{
+    margin-top: 2rem;
+  }
+}

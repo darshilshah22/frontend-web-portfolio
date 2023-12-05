@@ -1,0 +1,49 @@
+.about__header {
+  margin-top: 2rem;
+  background-color: var(--color-bg);
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 2rem;
+  gap: 2rem;
+  border-radius: 1.5rem;
+}
+
+.about__header img {
+  max-width: 100%;
+  height: auto;
+}
+
+.user__desc {
+  align-self: stretch;
+  line-height: 2rem;
+  color: var(--color-grey-1);
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.skills-work {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.skills,
+.work {
+  background-color: var(--color-bg);
+  border-radius: 1.2rem;
+  padding: 2rem;
+  width: 100%;
+}
+
+.skills-work ul {
+  margin-top: 1rem;
+}
+
+.skills-work li {
+  margin-left: 1rem;
+  margin-bottom: 0.3rem;
+  list-style: circle;
+  color: var(--color-grey-1);
+}
