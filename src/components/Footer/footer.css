@@ -1,16 +1,19 @@
 footer{
     padding-bottom: 1rem;
+    cursor: pointer;
 }
 
 .footer {
   background-color: var(--color-bg);
   color: var(--color-grey-1);
-  padding: 2rem;
-  border-radius: 1.5rem;
+  padding: 1.2rem;
+  border-radius: 1rem;
   margin-top: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 700;
+  gap: 0.6rem;
 }
 
 @media screen and (min-width: 768px){

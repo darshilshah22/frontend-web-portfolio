@@ -4,11 +4,12 @@ import Projects from "../Projects/Projects";
 import MoreWork from "../MoreWork/MoreWork";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
-import "./home.css"
+import "./home.css";
 
 const Home = () => {
+
   return (
-    <div className="home">
+    <div id="home">
       <Header />
       <Projects />
       <MoreWork />

@@ -1,9 +1,13 @@
 import React from "react";
 import "./navbar.css";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
+import { goToTop } from "../../App";
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <nav>
       <div className="navbar">
@@ -12,8 +16,9 @@ const Navbar = () => {
             <NavLink
               to="/"
               className={({ isActive }) =>
-                `${isActive ? "active" : "deactive"}`
+                `${isActive && location.hash === "" ? "active" : "deactive"}`
               }
+              onClick={() => goToTop()}
             >
               Home
             </NavLink>
@@ -22,31 +27,34 @@ const Navbar = () => {
             <NavLink
               to="/about"
               className={({ isActive }) =>
-                `${isActive ? "active" : "deactive"}`
+                `${isActive && location.hash === "" ? "active" : "deactive"}`
               }
+              onClick={() => goToTop()}
             >
               About
             </NavLink>
           </li>
           <li>
-            <NavLink
-              to="/work"
-              className={({ isActive }) =>
-                `${isActive ? "active" : "deactive"}`
-              }
+            <HashLink
+              smooth
+              to="/#projects"
+              className={`${
+                location.hash === "#projects" ? "active" : "deactive"
+              }`}
             >
               Work
-            </NavLink>
+            </HashLink>
           </li>
           <li>
-            <NavLink
-              to="/contact"
-              className={({ isActive }) =>
-                `${isActive ? "active" : "deactive"}`
-              }
+            <HashLink
+              smooth
+              to={`${location.pathname}/#contact`}
+              className={`${
+                location.hash === "#contact" ? "active" : "deactive"
+              }`}
             >
               Contact
-            </NavLink>
+            </HashLink>
           </li>
         </ul>
         <HiMiniBars3BottomRight size={32} className="mobile_menu" />
