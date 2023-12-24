@@ -13,6 +13,13 @@
   object-fit: cover;
   border-radius: 1rem;
   background-color: #fff;
+  scale: 1;
+  transition: all 0.4s ease;
+}
+
+.custom__slider img:hover{
+  scale: 1.1;
+  cursor: pointer;
 }
 
 .image_with_controls{
