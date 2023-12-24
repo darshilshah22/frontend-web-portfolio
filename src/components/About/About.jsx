@@ -4,6 +4,7 @@ import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import { useEffect } from "react";
 import { goToTop } from "../../App";
+import { motion } from "framer-motion";
 
 const About = () => {
   useEffect(() => {
@@ -11,24 +12,31 @@ const About = () => {
   }, []);
 
   return (
-    <section id="about">
+    <motion.section
+      id="about"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 3 }}
+    >
       <div className="about__header">
         <img src="/assets/profile.png" alt="" />
         <div className="intro">
           <p className="user_name">Darshil Shah</p>
           <p className="user__desc">
-            Interaction / Product Designer — generalist by thinking, specialist
-            by practice. I strive to live by my work values — precision, balance
-            and discipline.
+            A 24-year-old IT engineering graduate, is a skilled software
+            developer specializing in web and mobile projects. With a passion
+            for crafting seamless digital experiences, I bring a blend of
+            academic excellence and practical expertise to my work.
           </p>
           <p className="user__desc">
-            My vocation is in pursuit of systems that seamlessly come together,
-            experiences that elegantly convey ideas, and interactions that
-            challenge conventions.
+            My collaborative approach and effective communication, I
+            contribute significantly to project success. Outside of coding,
+            I'm a dedicated learner, staying abreast of industry trends.
+            Committed to leaving a lasting impact on technology.
           </p>
           <p className="user__desc">
-            Design is communication. For me, clarity and momentum are a
-            formidable duo.
+            My journey is marked by innovation and a drive for continuous
+            improvement.
           </p>
         </div>
       </div>
@@ -36,26 +44,29 @@ const About = () => {
       {/* skills-work */}
       <div className="skills-work">
         <div className="skills">
-          <div className="heading">My Skills</div>
+          <div className="heading">Soft Skills</div>
           <ul className="skill-list">
-            <li>User Interface, Interaction</li>
-            <li>Experience Design</li>
-            <li>Product Strategy</li>
-            <li>Visual Communication</li>
-            <li>Information Architecture</li>
-            <li>Design Research</li>
-            <li>Human-centered Design</li>
-            <li>3D Modeling, Rendering</li>
+            <li>Leadership</li>
+            <li>Teamwork</li>
+            <li>Problem-solving</li>
+            <li>Adaptability/Flexibility</li>
+            <li>Emotional Intelligence</li>
+            <li>Conflict Resolution</li>
+            <li>Time Management</li>
+            <li>Critical Thinking</li>
           </ul>
         </div>
         <div className="work">
-          <div className="heading">Work Approach</div>
+          <div className="heading">Tech Skills</div>
           <ul className="work-list">
-            <li>Design for emergence</li>
-            <li>Build momentum first</li>
-            <li>Value right problems</li>
-            <li>Performance is design</li>
-            <li>Go messy, then simplify</li>
+            <li>HTML, CSS, JavaScript</li>
+            <li>TypeScript</li>
+            <li>ReactJS</li>
+            <li>Redux</li>
+            <li>NextJS</li>
+            <li>Flutter</li>
+            <li>Firebase</li>
+            <li>Python</li>
           </ul>
         </div>
       </div>
@@ -103,16 +114,25 @@ const About = () => {
               <p>Data Science</p>
             </div>
             <div className="interest_item">
-              <img src="/assets/ds.jpg" alt="" />
-              <p>Data Science</p>
+              <img
+                src="https://media.geeksforgeeks.org/wp-content/uploads/20230911173805/What-is-Artiificial-Intelligence(AI).webp"
+                alt=""
+              />
+              <p>Artificial Intelligence</p>
             </div>
             <div className="interest_item">
-              <img src="/assets/ds.jpg" alt="" />
-              <p>Data Science</p>
+              <img
+                src="https://www.simplilearn.com/ice9/free_resources_article_thumb/full-stack-developer.jpg"
+                alt=""
+              />
+              <p>Full Stack Development</p>
             </div>
             <div className="interest_item">
-              <img src="/assets/ds.jpg" alt="" />
-              <p>Data Science</p>
+              <img
+                src="https://www.fsm.ac.in/blog/wp-content/uploads/2022/08/ml-e1610553826718.jpg"
+                alt=""
+              />
+              <p>Machine Learning</p>
             </div>
           </div>
         </div>
@@ -120,7 +140,7 @@ const About = () => {
 
       <Contact />
       <Footer />
-    </section>
+    </motion.section>
   );
 };
 

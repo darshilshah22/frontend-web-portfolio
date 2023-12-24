@@ -13,6 +13,7 @@
   overflow: hidden;
   position: relative;
   line-height: 1.5;
+  height: 37rem;
 }
 
 .card_description {

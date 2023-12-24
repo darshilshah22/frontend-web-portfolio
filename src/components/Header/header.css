@@ -3,11 +3,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
+  margin-top: 1rem;
 }
 
 .header__container img {
-  object-fit: cover;
+  max-width: 100%;
+  height: auto;
   background-color: var(--color-bg);
   padding: 2rem;
   border-radius: 1.5rem;
@@ -21,6 +22,7 @@
   align-items: flex-start;
   border-radius: 1.5rem;
   margin-top: 1rem;
+  border: 2px solid transparent;
 }
 
 .user_name {

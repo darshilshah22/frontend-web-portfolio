@@ -5,17 +5,22 @@ import MoreWork from "../MoreWork/MoreWork";
 import Contact from "../Contact/Contact";
 import Footer from "../Footer/Footer";
 import "./home.css";
+import { motion } from "framer-motion";
 
 const Home = () => {
-
   return (
-    <div id="home">
+    <motion.div
+      id="home"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 3 }}
+    >
       <Header />
       <Projects />
       <MoreWork />
       <Contact />
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

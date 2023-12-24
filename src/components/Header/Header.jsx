@@ -4,14 +4,16 @@ import "./header.css";
 const Header = () => {
   return (
     <section className="header">
-      <div className="header__container">
+      <div
+        className="header__container"
+      >
         <img src="/assets/profile.png" alt="" />
         <div className="intro">
           <p className="user_name">Darshil Shah</p>
           <p className="user_desc">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque
-            similique, voluptatibus maxime tempora rerum modi velit? Omnis nobis
-            libero officiis.
+            A passionate and innovative Frontend Web and Mobile Developer with a
+            relentless dedication to transforming pixels into seamless,
+            interactive experiences.
           </p>
           <div className="user_location">
             <p>Surat, Gujarat</p>

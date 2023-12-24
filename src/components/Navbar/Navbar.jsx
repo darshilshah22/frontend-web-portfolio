@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./navbar.css";
 import { HiMiniBars3BottomRight } from "react-icons/hi2";
 import { NavLink, useLocation } from "react-router-dom";
@@ -7,18 +7,22 @@ import { goToTop } from "../../App";
 
 const Navbar = () => {
   const location = useLocation();
+  const [open, setOpen] = useState(false);
 
   return (
     <nav>
       <div className="navbar">
-        <ul className="navbar__menu">
+        <ul className={`navbar__menu ${open ? "open" : ""}`}>
           <li>
             <NavLink
               to="/"
               className={({ isActive }) =>
                 `${isActive && location.hash === "" ? "active" : "deactive"}`
               }
-              onClick={() => goToTop()}
+              onClick={() => {
+                setOpen(false);
+                goToTop();
+              }}
             >
               Home
             </NavLink>
@@ -29,7 +33,10 @@ const Navbar = () => {
               className={({ isActive }) =>
                 `${isActive && location.hash === "" ? "active" : "deactive"}`
               }
-              onClick={() => goToTop()}
+              onClick={() => {
+                setOpen(false);
+                goToTop();
+              }}
             >
               About
             </NavLink>
@@ -41,6 +48,7 @@ const Navbar = () => {
               className={`${
                 location.hash === "#projects" ? "active" : "deactive"
               }`}
+              onClick={()=>setOpen(false)}
             >
               Work
             </HashLink>
@@ -48,16 +56,21 @@ const Navbar = () => {
           <li>
             <HashLink
               smooth
-              to={`${location.pathname}/#contact`}
+              to={`${location.pathname}#contact`}
               className={`${
                 location.hash === "#contact" ? "active" : "deactive"
               }`}
+              onClick={()=>setOpen(false)}
             >
               Contact
             </HashLink>
           </li>
         </ul>
-        <HiMiniBars3BottomRight size={32} className="mobile_menu" />
+        <HiMiniBars3BottomRight
+          size={32}
+          className="mobile_menu"
+          onClick={() => setOpen(!open)}
+        />
       </div>
     </nav>
   );
