@@ -18,6 +18,7 @@ const Tools = () => {
         <img src="/assets/tools/react.png" alt="" className="tools_icon" />
         <img src="/assets/tools/redux.png" alt="" className="tools_icon" />
         <img src="/assets/tools/firebase.png" alt="" className="tools_icon" />
+        <img src="/assets/tools/nextjs.png" alt="" className="tools_icon" />
       </Marquee>
       <Marquee behavior="" direction="left" speed="50" autoFill="true">
         <img src="/assets/tools/git.png" alt="" className="tools_icon" />
@@ -25,13 +26,7 @@ const Tools = () => {
         <img src="/assets/tools/figma.png" alt="" className="tools_icon" />
         <img src="/assets/tools/postman.png" alt="" className="tools_icon" />
         <img src="/assets/tools/vscode.png" alt="" className="tools_icon" />
-      </Marquee>
-      <Marquee behavior="" direction="left" speed="50" autoFill="true">
-        <img src="/assets/tools/figma.png" alt="" className="tools_icon" />
-        <img src="/assets/tools/postman.png" alt="" className="tools_icon" />
-        <img src="/assets/tools/vscode.png" alt="" className="tools_icon" />
         <img src="/assets/tools/tailwind.png" alt="" className="tools_icon" />
-        <img src="/assets/tools/nextjs.png" alt="" className="tools_icon" />
       </Marquee>
     </div>
   );

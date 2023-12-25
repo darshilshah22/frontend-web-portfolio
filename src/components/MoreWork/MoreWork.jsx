@@ -2,12 +2,13 @@ import React from "react";
 import "./morework.css";
 import CustomCarousel from "../../container/CustomSlider/CustomSlider";
 import Tools from "../../container/Tools/Tools";
+import { Link } from "react-router-dom";
 
 const MoreWork = () => {
   return (
     <section className="morework">
       <div className="morework__container">
-        <div className="aboutme card">
+        <Link className="aboutme card" to="/about">
           <p className="heading">About Me</p>
           <p className="card_description">
             Darshil Shah, a dynamic and innovative 24-year-old software
@@ -43,7 +44,7 @@ const MoreWork = () => {
             project at a time.
           </p>
           <div className="bottom"></div>
-        </div>
+        </Link>
         <div className="mylibrary card">
           <p className="heading">My Library</p>
           <p className="card_description">

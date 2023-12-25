@@ -94,13 +94,17 @@
   width: 100%;
   margin-top: 1rem;
   background-color: var(--color-bg);
-  border-radius: 1rem;
+  border-radius: 0.7rem;
   padding: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 0.3rem;
   cursor: pointer;
+}
+
+.morework_container:hover{
+  background-color: #212121a9;
 }
 
 .morework_text {

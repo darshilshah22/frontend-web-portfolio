@@ -5,6 +5,16 @@
   gap: 1rem;
 }
 
+.aboutme{
+  scale: 1;
+  transition: all 0.4s ease;
+}
+
+.aboutme:hover{
+  cursor: pointer;
+  scale: 1.05;
+}
+
 .card {
   padding: 2rem;
   padding-bottom: 1rem;

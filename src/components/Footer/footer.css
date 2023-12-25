@@ -1,6 +1,6 @@
-footer{
-    padding-bottom: 1rem;
-    cursor: pointer;
+footer {
+  padding-bottom: 1rem;
+  cursor: pointer;
 }
 
 .footer {
@@ -12,16 +12,15 @@ footer{
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 700;
   gap: 0.6rem;
 }
 
-@media screen and (min-width: 768px){
-  footer{
+@media screen and (min-width: 768px) {
+  footer {
     padding-bottom: 2rem;
   }
 
-  .footer{
+  .footer {
     margin-top: 2rem;
   }
 }
