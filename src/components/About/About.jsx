@@ -29,10 +29,10 @@ const About = () => {
             academic excellence and practical expertise to my work.
           </p>
           <p className="user__desc">
-            My collaborative approach and effective communication, I
-            contribute significantly to project success. Outside of coding,
-            I'm a dedicated learner, staying abreast of industry trends.
-            Committed to leaving a lasting impact on technology.
+            My collaborative approach and effective communication, I contribute
+            significantly to project success. Outside of coding, I'm a dedicated
+            learner, staying abreast of industry trends. Committed to leaving a
+            lasting impact on technology.
           </p>
           <p className="user__desc">
             My journey is marked by innovation and a drive for continuous
@@ -83,13 +83,13 @@ const About = () => {
               </div>
               <p className="years">2021-2022</p>
             </li>
-            <li className="experience__info">
+            {/* <li className="experience__info">
               <div className="company_info">
                 <p className="position">Mobile App Developer</p>
                 <p className="company">Radarsoft Technology</p>
               </div>
               <p className="years">2022</p>
-            </li>
+            </li> */}
             <li className="experience__info">
               <div className="company_info">
                 <p className="position">Frontend Developer</p>
