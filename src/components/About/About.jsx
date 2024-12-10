@@ -23,7 +23,7 @@ const About = () => {
         <div className="intro">
           <p className="user_name">Darshil Shah</p>
           <p className="user__desc">
-            A 24-year-old IT engineering graduate, is a skilled software
+            A 25-year-old IT engineering graduate, is a skilled software
             developer specializing in web and mobile projects. With a passion
             for crafting seamless digital experiences, I bring a blend of
             academic excellence and practical expertise to my work.
