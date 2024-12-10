@@ -11,7 +11,7 @@ const MoreWork = () => {
         <Link className="aboutme card" to="/about">
           <p className="heading">About Me</p>
           <p className="card_description">
-            Darshil Shah, a dynamic and innovative 24-year-old software
+            Darshil Shah, a dynamic and innovative 25-year-old software
             developer, is making waves in the world of technology with a keen
             focus on web and mobile projects. Armed with a degree in IT
             engineering, Darshil brings a unique blend of academic prowess and
@@ -45,13 +45,13 @@ const MoreWork = () => {
           </p>
           <div className="bottom"></div>
         </Link>
-        <div className="mylibrary card">
+        {/* <div className="mylibrary card">
           <p className="heading">My Library</p>
           <p className="card_description">
             Books I learn from and get inspired by
           </p>
           <CustomCarousel />
-        </div>
+        </div> */}
         <div className="tools_container card">
           <div className="tools_header">
             <p className="heading">Tools</p>

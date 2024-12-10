@@ -102,7 +102,7 @@ const About = () => {
                 <p className="position">Software Developer</p>
                 <p className="company">Triveni Global Software</p>
               </div>
-              <p className="years">2023-2024</p>
+              <p className="years">2023-Present</p>
             </li>
           </ul>
         </div>
